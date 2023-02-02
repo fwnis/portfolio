@@ -25,6 +25,7 @@
 }
 
 .formacao .subtitulo {
+  text-transform: uppercase;
   color: #E0E0E0;
   max-width: 4ch;
 }
@@ -136,17 +137,13 @@
 @media (max-width: 800px) {
   .formacao-container {
     grid-template-columns: 1fr;
-    padding: 60px 20px;
-    gap: 40px;
+    padding: 60px 80px;
+    gap: 10px;
   }
   .formacao .subtitulo {
-    color: #000;
+    color: #E0E0E0;
   }
   .formacao-texto {
     font-size: 1.25rem;
-  }
-  .formacao-extra h3::before {
-    position: initial;
-    margin-bottom: 10px;
   }
 }

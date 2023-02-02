@@ -31,16 +31,22 @@
 
 .footer-copy {
   grid-column: 1 / -1;
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #8F8F8F;
 }
 
 @media (max-width: 800px) {
   .footer-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 80px;
     gap: 40px;
   }
+  .footer-texto {
+    font-size: 1.125rem;
+    line-height: 1.33;
+    color: CFCFCF;
+  }
   .footer-container li {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }

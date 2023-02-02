@@ -8,6 +8,7 @@
 }
 
 .experiencia .subtitulo {
+  text-transform: uppercase;
   color: #0f0f0f;
 }
 
@@ -85,20 +86,47 @@
 @media (max-width: 800px) {
   .experiencia {
     grid-template-columns: 1fr;
-    gap: 40px;
+    padding: 40px 80px;
+    gap: 10px;
   }
   .experiencia .subtitulo {
-    color: #f7f7f7;
+    color: #292929;
   }
   .experiencia-texto {
     font-size: 1.25rem;
   }
+}
+
+@media (max-width: 500px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    padding: 0px 40px;
+    gap: 10px;
+  }
+  .experiencia .subtitulo {
+    color: #292929;
+    font-size: 2rem;
+  }
+  .experiencia-texto {
+    font-size: 0.875rem;
+  }
+  .empresa {
+    grid-template-columns: 1fr;
+  }
   .empresa-ano {
+    width: auto;
     position: initial;
     order: 1;
-    width: initial;
-    text-align: left;
-    font-weight: bold;
+    text-align: right;
+  }
+  .empresa h3 {
+    order: -2;
+  }
+  .empresa-titulo span {
+    order: 0;
+  }
+  .empresa-texto {
+    order: -1;
   }
 }
 
