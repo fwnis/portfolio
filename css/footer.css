@@ -50,3 +50,10 @@
     font-size: 1.25rem;
   }
 }
+
+@media (max-width: 500px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 40px 40px;
+  }
+}

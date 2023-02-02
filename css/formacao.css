@@ -147,3 +147,31 @@
     font-size: 1.25rem;
   }
 }
+
+@media (max-width: 500px) {
+  .formacao-container {
+    padding: 40px 40px;
+    gap: 10px;
+  }
+  .formacao-container::after {
+    display: none;
+  }
+  .formacao .subtitulo {
+    font-size: 2.25rem;
+    color: #E0E0E0;
+  }
+  .formacao-texto {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  .faculdade-lista {
+    display: block;
+  }
+  .faculdade {
+    margin-bottom: 20px;
+  }
+  .formacao-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+}

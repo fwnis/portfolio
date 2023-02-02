@@ -100,15 +100,16 @@
 @media (max-width: 500px) {
   .experiencia {
     grid-template-columns: 1fr;
-    padding: 0px 40px;
+    padding: 0px 40px 20px 40px;
     gap: 10px;
   }
   .experiencia .subtitulo {
     color: #292929;
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
   .experiencia-texto {
-    font-size: 0.875rem;
+    font-size: 1rem;
+    margin-bottom: 40px;
   }
   .empresa {
     grid-template-columns: 1fr;
