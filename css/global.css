@@ -29,6 +29,10 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
 .subtitulo {
   font-size: 8rem;
   line-height: 1;
