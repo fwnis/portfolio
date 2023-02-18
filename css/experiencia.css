@@ -26,7 +26,7 @@
 
 .experiencia-detalhe {
   text-align: right;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .experiencia-detalhes {
@@ -123,6 +123,9 @@
   .experiencia-texto {
     font-size: 1rem;
     margin-bottom: 40px;
+  }
+  .experiencia-detalhe {
+    margin-bottom: 0px;
   }
   .projeto {
     grid-template-columns: 1fr;
