@@ -1,5 +1,10 @@
+.header-bg {
+  background: #000;
+}
+
 .header {
-  padding: 20px 40px;
+  max-width: 1200px;
+  padding: 20px 20px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
