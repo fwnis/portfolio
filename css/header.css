@@ -18,7 +18,7 @@
   font-size: 1.125rem;
   line-height: 1.3;
   display: inline-block;
-  padding: 8px 0px;
+  padding: 16px 0px;
   border-radius: 5px;
   text-decoration: none;
   color: #f7f7f7;
@@ -61,7 +61,7 @@
   }
   #nav.visivel #header-menu {
     display: block;
-    height: 120px;
+    height: 166px;
     visibility: initial;
     overflow-y: auto;
   }
