@@ -26,11 +26,12 @@
 
 .experiencia-detalhe {
   text-align: right;
+  margin-bottom: 40px;
 }
 
 .experiencia-detalhes {
-  color: #fff;
-  font-size: 1rem;
+  color: #292929;
+  font-size: 1.25rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
