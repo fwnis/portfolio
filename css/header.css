@@ -7,41 +7,118 @@
   align-items: center;
 }
 
-.header-menu {
+#header-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 40px;
   justify-content: center;
 }
 
-.header-menu a {
+#header-menu a {
   font-size: 1.125rem;
   line-height: 1.3;
-  padding: 10px 20px;
+  display: inline-block;
+  padding: 8px 0px;
   border-radius: 5px;
   text-decoration: none;
   color: #f7f7f7;
+  position: relative;
 }
 
-.header-menu a:hover {
-  background-color: #0F0F0F;
-  transition: .3s;
+#header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: #ffffff;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
 }
 
-@media (max-width: 800px) {
+#header-menu a:hover::after {
+  width: 100%;
+}
+
+#header-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #header-menu {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px;
+    height: 0;
+    transition: 0.3s;
+    visibility: hidden;
+    overflow-y: hidden;
+    z-index: 1000;
+    border-radius: 0px 0px 5px 5px;
+  }
+  #nav.visivel #header-menu {
+    display: block;
+    height: 120px;
+    visibility: initial;
+    overflow-y: auto;
+  }
+  #header-mobile {
+    display: flex;
+    padding: 8px 16px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+  }
+  #hamburguer {
+    width: 20px;
+    border-top: 2px solid #fff;
+  }
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.4s;
+    position: relative;
+  }
+  #nav.visivel #hamburguer {
+    border-top-color: transparent;
+  }
+  #nav.visivel #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  #nav.visivel #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+
+/* @media (max-width: 800px) {
   .header {
     flex-direction: column;
     gap: 40px;
     padding: 20px;
   }
+  .header-menu {
+    gap: 20px;
+  }
   .header a {
     background: #0F0F0F;
     border-radius: 5px;
+    padding: 16px 18px;
   }
 }
 
 @media (max-width: 500px) {
   .header a{
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
-}
+} */

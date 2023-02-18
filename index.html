@@ -13,9 +13,11 @@
 
 <body>
   <header class="header">
-    <img src="img/marca.svg" alt="Logo fanis" width="104" height="36">
-    <nav>
-      <ul class="header-menu">
+    <img src="./img/marca.svg" alt="Logo fanis" width="104" height="36">
+    <nav id="nav">
+      <button aria-label="Abrir Menu" id="header-mobile" aria-haspopup="true" aria-controls="header-menu" aria-expanded="false"><span id="hamburguer"></span>
+      </button>
+      <ul id="header-menu">
         <li><a href="#experiencia">Experiência</a></li>
         <li><a href="#formacao">Formação</a></li>
         <li><a href="#contato">Contato</a></li>
@@ -38,50 +40,52 @@
           Design</strong>, ao código <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>.
         Atualmente estudo <strong>Web Design</strong> como um todo, buscando sempre me aprimorar.</p>
 
-      <div class="empresa">
-        <span class="empresa-ano">2023</span>
-        <h3 class="empresa-titulo">Bikcraft</h3>
-        <span class="empresa-titulo">Desenvolvedor Sênior</span>
-        <p class="empresa-texto">No projeto Bikcraft eu trabalhei no desenvolvimento completo do UX e UI Design e código
+      <a class="projeto" href="https://fwnis.github.io/projetos/bikcraft/index.html">
+        <span class="projeto-ano">2023</span>
+        <h3 class="projeto-titulo">Bikcraft</h3>
+        <span class="projeto-titulo">Desenvolvedor Sênior</span>
+        <p class="projeto-texto">No projeto Bikcraft eu trabalhei no desenvolvimento completo do UX e UI Design e código
           HTML, CSS e JavaScript do site</p>
-        <ul class="empresa-habilidades">
+        <ul class="projeto-habilidades">
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
           <li>UX Design</li>
           <li>UI Design</li>
         </ul>
-      </div>
+      </a>
 
-      <div class="empresa">
-        <span class="empresa-ano">2023</span>
-        <h3 class="empresa-titulo">e-flix</h3>
-        <span class="empresa-titulo">Desenvolvedor Sênior</span>
-        <p class="empresa-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quaerat unde explicabo
+      <a class="projeto" href="./">
+        <span class="projeto-ano">****</span>
+        <h3 class="projeto-titulo">Em breve...</h3>
+        <span class="projeto-titulo">...</span>
+        <p class="projeto-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quaerat unde explicabo
           laborum consequatur! Iusto nihil beatae impedit.</p>
-        <ul class="empresa-habilidades">
+        <ul class="projeto-habilidades">
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
           <li>UX Design</li>
           <li>UI Design</li>
         </ul>
-      </div>
+      </a>
 
-      <div class="empresa">
-        <span class="empresa-ano">2023</span>
-        <h3 class="empresa-titulo">e-solar</h3>
-        <span class="empresa-titulo">Desenvolvedor Sênior</span>
-        <p class="empresa-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ducimus autem
+      <a class="projeto" href="./">
+        <span class="projeto-ano">****</span>
+        <h3 class="projeto-titulo">Em breve...</h3>
+        <span class="projeto-titulo">...</span>
+        <p class="projeto-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ducimus autem
           adipisci? Architecto, omnis rerum..</p>
-        <ul class="empresa-habilidades">
+        <ul class="projeto-habilidades">
           <li>HTML</li>
           <li>CSS</li>
           <li>JavaScript</li>
           <li>UX Design</li>
           <li>UI Design</li>
         </ul>
-      </div>
+      </a>
+      <div class="experiencia-detalhe"><a class="experiencia-detalhes" href="https://fwnis.github.io/projetos/"
+          target="_blank">VER MAIS PROJETOS ></a></div>
     </div>
   </section>
 
@@ -91,25 +95,26 @@
 
       <div>
         <p class="formacao-texto">
-          Minha mais recente experiência acadêmica foi o <strong>mestrado</strong> 🎓 que fiz no exterior em <strong>UX
-            Design</strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
+          Completei o <strong>Ensino Médio</strong> 🎓 recentemente, sou apaixonado pela área de tecnologia e vou viver
+          disso!
+          No momento estou me aprimorando como desenvolvedor e buscando oportunidades.
         </p>
 
         <ul class="faculdade-lista">
           <li class="faculdade">
-            <span class="faculdade-tipo">Bacharel</span>
-            <h3 class="faculdade-curso">Administração de Empresas</h3>
-            <span class="faculdade-instituicao">UFRRJ</span>
+            <span class="faculdade-tipo">Completo</span>
+            <h3 class="faculdade-curso">Ensino Médio</h3>
+            <span class="faculdade-instituicao">Cespa</span>
           </li>
           <li class="faculdade">
-            <span class="faculdade-tipo">Tecnólogo</span>
-            <h3 class="faculdade-curso">Design Digital</h3>
-            <span class="faculdade-instituicao">Infnet</span>
+            <span class="faculdade-tipo">Em breve...</span>
+            <h3 class="faculdade-curso">Critical Error 0x000001</h3>
+            <span class="faculdade-instituicao">None</span>
           </li>
           <li class="faculdade">
-            <span class="faculdade-tipo">Mestre</span>
-            <h3 class="faculdade-curso">User Experience Design</h3>
-            <span class="faculdade-instituicao">UCLL</span>
+            <span class="faculdade-tipo">Em breve...</span>
+            <h3 class="faculdade-curso">Critical Error 0x000002</h3>
+            <span class="faculdade-instituicao">None</span>
           </li>
         </ul>
 
@@ -117,8 +122,7 @@
           <div class="cursos">
             <h3>Cursos Intensinvos</h3>
             <ul>
-              <li>UX Design e UI Design <span>52h</span></li>
-              <li>Front End para Iniciantes <span>72h</span></li>
+              <li>Web Design Completo <span>260h</span></li>
             </ul>
           </div>
           <div class="idiomas">
@@ -146,6 +150,7 @@
     </div>
   </footer>
 
+  <script src="script/script.js"></script>
 </body>
 
 </html>

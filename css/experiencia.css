@@ -24,7 +24,19 @@
   color: #f7f7f7;
 }
 
-.empresa {
+.experiencia-detalhe {
+  text-align: right;
+}
+
+.experiencia-detalhes {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.projeto {
+  color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
@@ -35,7 +47,7 @@
   position: relative;
 }
 
-.empresa::before {
+.projeto::before {
   content: "";
   display: block;
   width: 4px;
@@ -46,7 +58,7 @@
   left: -4px;
 }
 
-.empresa-ano {
+.projeto-ano {
   position: absolute;
   text-align: right;
   width: 80px;
@@ -56,26 +68,26 @@
   font-size: 0.875rem;
 }
 
-.empresa-titulo {
+.projeto-titulo {
   font-size: 1.125rem;
   line-height: 1.1;
   font-weight: bold;
 }
 
-.empresa-texto {
+.projeto-texto {
   font-size: 0.875rem;
   line-height: 1.4;
   color: #cfcfcf;
 }
 
-.empresa-habilidades {
+.projeto-habilidades {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   align-content: start;
 }
 
-.empresa-habilidades li {
+.projeto-habilidades li {
   font-size: 0.875rem;
   line-height: 1.4;
   border-radius: 5px;
@@ -111,28 +123,28 @@
     font-size: 1rem;
     margin-bottom: 40px;
   }
-  .empresa {
+  .projeto {
     grid-template-columns: 1fr;
   }
-  .empresa-ano {
+  .projeto-ano {
     width: auto;
     position: initial;
     order: 1;
     text-align: right;
   }
-  .empresa h3 {
+  .projeto h3 {
     order: -2;
   }
-  .empresa-titulo span {
+  .projeto-titulo span {
     order: 0;
   }
-  .empresa-texto {
+  .projeto-texto {
     order: -1;
   }
 }
 
 @media (max-width: 400px) {
-  .empresa {
+  .projeto {
     grid-template-columns: 1fr;
   }
 }
