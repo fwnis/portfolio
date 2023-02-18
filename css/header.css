@@ -1,10 +1,10 @@
 .header {
-  max-width: 1200px;
-  padding: 20px 20px;
+  padding: 20px 40px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #000;
 }
 
 #header-menu {
@@ -40,11 +40,20 @@
   width: 100%;
 }
 
+#header-fixo.fixo {
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+}
+
 #header-mobile {
   display: none;
 }
 
 @media (max-width: 600px) {
+  .header {
+    padding: 20px 20px;
+  }
   #header-menu {
     display: block;
     position: absolute;
