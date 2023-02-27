@@ -66,16 +66,18 @@
     right: 0;
     background: rgba(0, 0, 0, 0.8);
     padding: 20px 40px;
+    width: 100%;
     height: 0;
     transition: 0.3s;
     visibility: hidden;
     overflow-y: hidden;
     z-index: 1000;
     border-radius: 0px 0px 0px 5px;
+    box-sizing: border-box;
   }
   #nav.visivel #header-menu {
     display: block;
-    height: 166px;
+    height: 100vh;
     visibility: initial;
     overflow-y: auto;
   }
