@@ -49,28 +49,23 @@
   color: #CFCFCF;
 }
 
-.btn-download::before {
+.btn::before {
   content: "";
   display: block;
-  background: url(../img/download.svg) no-repeat center center;
   width: 24px;
   height: 24px;
+}
+
+.btn-download::before {
+  background: url(../img/download.svg) no-repeat center center;
 }
 
 .btn-github::before {
-  content: "";
-  display: block;
   background: url(../img/github.svg) no-repeat center center;
-  width: 24px;
-  height: 24px;
 }
 
 .btn-linkedin::before {
-  content: "";
-  display: block;
   background: url(../img/linkedin.svg) no-repeat center center;
-  width: 24px;
-  height: 24px;
 }
 
 @media (max-width: 1000px) {
@@ -131,5 +126,26 @@
   }
   .btn a {
     font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .introducao {
+    text-align: center;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+  }
+  .btn {
+    padding: 8px 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+  .btn a {
+    font-size: 0.7rem;
+  }
+  .btn::before {
+    width: 16px;
+    height: 16px;
   }
 }
