@@ -27,9 +27,42 @@
   z-index: -1;
 }
 
-.introducao p {
-  font-size: 1.5rem;
-  color: #B4B4B4;
+.btns {
+  display: flex;
+}
+
+.btn {
+  background: #0f0f0f;
+  padding: 12px 16px;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(#934543, #662626);
+}
+
+.btn a {
+  color: #CFCFCF;
+}
+
+.btn-download::before {
+  content: "";
+  display: block;
+  background: url(../img/download.svg) no-repeat center center;
+  width: 20px;
+  height: 20px;
+}
+
+.btn-github::before {
+  content: "";
+  display: block;
+  background: url(../img/github.svg) no-repeat center center;
+  width: 20px;
+  height: 20px;
 }
 
 @media (max-width: 1000px) {

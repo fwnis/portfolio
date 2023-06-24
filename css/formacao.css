@@ -1,9 +1,9 @@
-.formacao {
+.sobre {
   background: #F5F5F5;
   color: #000;
 }
 
-.formacao-container {
+.sobre-container {
   max-width: 1200px;
   padding: 120px 20px;
   margin: 0 auto;
@@ -13,7 +13,7 @@
   position: relative;
 }
 
-.formacao-container::after {
+.sobre-container::after {
   content: "";
   display: block;
   width: 130px;
@@ -24,13 +24,16 @@
   left: 20px;
 }
 
-.formacao .subtitulo {
+.sobre .subtitulo {
   text-transform: uppercase;
   color: #E0E0E0;
-  max-width: 4ch;
 }
 
-.formacao-texto {
+.sobre .mobile {
+  display: none;
+}
+
+.sobre-texto {
   font-size: 1.5rem;
   line-height: 1.33;
   max-width: 40ch;
@@ -38,70 +41,123 @@
   color: #3D3D3D;
 }
 
-.formacao-texto strong {
+.sobre-texto strong {
   color: #000;
 }
 
-.faculdade-lista {
+.cursos-lista {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 60px;
 }
 
-.faculdade {
+.cursos-subtitulo{
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8F8F8F;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.cursos-subtitulo:before {
+  display: block;
+  content: "";
+  background: url(../img/cursos.svg) no-repeat center center;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.curso {
   flex: 1;
   background: #F0F0F0;
   padding: 20px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
-.faculdade-tipo {
+.curso-tipo {
   font-size: 0.875rem;
   text-transform: uppercase;
   color: #3D3D3D;
   margin-bottom: 10px;
 }
 
-.faculdade-curso {
+.curso-nome {
   flex: 1;
   font-size: 1.125rem;
   line-height: 1.4;
   margin-bottom: 40px;
-  position: relative;
 }
 
-.faculdade-curso::before {
+.curso::before {
   content: "";
   display: block;
   width: 4px;
   height: 20px;
   background: linear-gradient(#934543, #662626);
   position: absolute;
-  left: -24px;
+  left: -4px;
+  top: 54px;
 }
 
-.faculdade-instituicao {
+.curso-instituicao {
   font-size: 1.125rem;
   color: #3D3D3D;
 }
 
-.cursos {
-  margin-bottom: 60px;
+.curso .hover-links {
+  position: absolute;
+  content: "";
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 80%;
+  height: 0%;
+  background: #F0F0F0;
+  opacity: 80%;
+  top: 0;
+  transition: 0.2s;
 }
 
-.formacao-extra h3{
+.curso:hover .hover-links {
+  visibility: visible;
+  height: 100%;
+}
+
+.curso .hover-links a {
+  color: #0F0F0F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.curso .hover-links .link-certificado::before {
+  content: "";
+  display: block;
+  background: url(../img/certificado.svg) no-repeat center center;
+  width: 32px;
+  height: 22px;
+}
+
+.sobre-extra h3{
   font-size: 0.875rem;
   line-height: 1.4;
   color: #8F8F8F;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   position: relative;
 }
 
-.formacao-extra h3::before {
+.sobre-extra h3::before {
   display: block;
   content: "";
   width: 24px;
@@ -111,21 +167,17 @@
   top: -4px;
 }
 
-.cursos h3::before {
-  background: url(../img/cursos.svg) no-repeat center center;
-}
-
 .idiomas h3::before {
   background: url(../img/idiomas.svg) no-repeat center center;
 }
 
-.formacao-extra li {
+.sobre-extra li {
   font-size: 1.125rem;
   line-height: 1.1;
   margin-bottom: 20px;
 }
 
-.formacao-extra span {
+.sobre-extra span {
   color: #3D3D3D;
 }
 
@@ -135,32 +187,36 @@
 }
 
 @media (max-width: 800px) {
-  .formacao-container {
+  .sobre-container {
     grid-template-columns: 1fr;
     padding: 60px 80px;
     gap: 10px;
   }
-  .formacao .subtitulo {
+  .sobre .desktop {
+    display: none;
+  }
+  .sobre .mobile {
+    display: block;
     color: #E0E0E0;
   }
-  .formacao-texto {
+  .sobre-texto {
     font-size: 1.25rem;
   }
 }
 
 @media (max-width: 500px) {
-  .formacao-container {
+  .sobre-container {
     padding: 40px 40px;
     gap: 10px;
   }
-  .formacao-container::after {
+  .sobre-container::after {
     display: none;
   }
-  .formacao .subtitulo {
+  .sobre .subtitulo {
     font-size: 2.25rem;
     color: #E0E0E0;
   }
-  .formacao-texto {
+  .sobre-texto {
     font-size: 1rem;
     margin-bottom: 40px;
   }
@@ -170,7 +226,7 @@
   .faculdade {
     margin-bottom: 20px;
   }
-  .formacao-extra h3::before {
+  .sobre-extra h3::before {
     position: initial;
     margin-bottom: 10px;
   }
