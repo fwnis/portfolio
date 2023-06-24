@@ -177,7 +177,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .experiencia {
     grid-template-columns: 1fr;
     padding: 0px 40px 20px 40px;
@@ -195,27 +195,30 @@
     margin-bottom: 0px;
   }
   .projeto {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
+  }
+  .projeto-titulo {
+    grid-column: 1;
+    grid-row: 1;
   }
   .projeto-ano {
     width: auto;
     position: initial;
-    order: 1;
     text-align: right;
+    grid-column: 1;
+    grid-row: 1;
   }
-  .projeto h3 {
-    order: -2;
+  .projeto-habilidades {
+    grid-column: 1;
+    grid-row: 4;
   }
-  .projeto-titulo span {
-    order: 0;
+  .projeto-img {
+    display: none;
   }
   .projeto-texto {
-    order: -1;
+    grid-column: 1;
   }
-}
-
-@media (max-width: 400px) {
-  .projeto {
-    grid-template-columns: 1fr;
+  .projeto .hover-links {
+    gap: 120px;
   }
 }

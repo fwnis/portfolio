@@ -1,5 +1,5 @@
 .sobre {
-  background: #F5F5F5;
+  background: #f5f5f5;
   color: #000;
 }
 
@@ -26,7 +26,7 @@
 
 .sobre .subtitulo {
   text-transform: uppercase;
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
 .sobre .mobile {
@@ -38,7 +38,7 @@
   line-height: 1.33;
   max-width: 40ch;
   margin-bottom: 60px;
-  color: #3D3D3D;
+  color: #3d3d3d;
 }
 
 .sobre-texto strong {
@@ -52,16 +52,16 @@
   margin-bottom: 60px;
 }
 
-.cursos-subtitulo{
+.cursos-subtitulo {
   font-size: 0.875rem;
   line-height: 1.4;
-  color: #8F8F8F;
+  color: #8f8f8f;
   text-transform: uppercase;
   margin-bottom: 20px;
   position: relative;
 }
 
-.cursos-subtitulo:before {
+.cursos-subtitulo::before {
   display: block;
   content: "";
   background: url(../img/cursos.svg) no-repeat center center;
@@ -74,7 +74,7 @@
 
 .curso {
   flex: 1;
-  background: #F0F0F0;
+  background: #f0f0f0;
   padding: 20px;
   border-radius: 5px;
   display: flex;
@@ -85,7 +85,7 @@
 .curso-tipo {
   font-size: 0.875rem;
   text-transform: uppercase;
-  color: #3D3D3D;
+  color: #3d3d3d;
   margin-bottom: 10px;
 }
 
@@ -109,7 +109,7 @@
 
 .curso-instituicao {
   font-size: 1.125rem;
-  color: #3D3D3D;
+  color: #3d3d3d;
 }
 
 .curso .hover-links {
@@ -122,7 +122,7 @@
   overflow: hidden;
   width: 80%;
   height: 0%;
-  background: #F0F0F0;
+  background: #f0f0f0;
   opacity: 80%;
   top: 0;
   transition: 0.2s;
@@ -134,7 +134,7 @@
 }
 
 .curso .hover-links a {
-  color: #0F0F0F;
+  color: #0f0f0f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,10 +148,10 @@
   height: 22px;
 }
 
-.sobre-extra h3{
+.sobre-extra h3 {
   font-size: 0.875rem;
   line-height: 1.4;
-  color: #8F8F8F;
+  color: #8f8f8f;
   text-transform: uppercase;
   margin-bottom: 20px;
   position: relative;
@@ -178,7 +178,7 @@
 }
 
 .sobre-extra span {
-  color: #3D3D3D;
+  color: #3d3d3d;
 }
 
 .cursos li {
@@ -197,14 +197,14 @@
   }
   .sobre .mobile {
     display: block;
-    color: #E0E0E0;
+    color: #e0e0e0;
   }
   .sobre-texto {
     font-size: 1.25rem;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .sobre-container {
     padding: 40px 40px;
     gap: 10px;
@@ -214,19 +214,20 @@
   }
   .sobre .subtitulo {
     font-size: 2.25rem;
-    color: #E0E0E0;
+    color: #e0e0e0;
   }
   .sobre-texto {
     font-size: 1rem;
     margin-bottom: 40px;
   }
-  .faculdade-lista {
+  .curso-lista {
     display: block;
   }
-  .faculdade {
+  .curso {
     margin-bottom: 20px;
   }
-  .sobre-extra h3::before {
+  .sobre-extra h3::before,
+  .cursos-subtitulo::before {
     position: initial;
     margin-bottom: 10px;
   }

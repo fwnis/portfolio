@@ -96,7 +96,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .introducao{
     grid-template-columns: 1fr;
     justify-items: center;
@@ -115,5 +115,13 @@
   }
   .introducao p {
     font-size: 1rem;
+  }
+  .btn {
+    padding: 10px 12px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+  .btn a {
+    font-size: 0.875rem;
   }
 }
