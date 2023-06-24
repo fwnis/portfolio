@@ -53,16 +53,24 @@
   content: "";
   display: block;
   background: url(../img/download.svg) no-repeat center center;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
 }
 
 .btn-github::before {
   content: "";
   display: block;
   background: url(../img/github.svg) no-repeat center center;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+.btn-linkedin::before {
+  content: "";
+  display: block;
+  background: url(../img/linkedin.svg) no-repeat center center;
+  width: 24px;
+  height: 24px;
 }
 
 @media (max-width: 1000px) {
