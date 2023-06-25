@@ -223,9 +223,6 @@
   .curso-lista {
     display: block;
   }
-  .curso {
-    margin-bottom: 20px;
-  }
   .sobre-extra h3::before,
   .cursos-subtitulo::before {
     position: initial;
