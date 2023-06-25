@@ -228,4 +228,7 @@
     position: initial;
     margin-bottom: 10px;
   }
+  .curso .hover-links {
+    width: 90%;
+  }
 }
