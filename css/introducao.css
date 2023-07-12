@@ -46,7 +46,7 @@
 }
 
 .btn a {
-  color: #CFCFCF;
+  color: #cfcfcf;
 }
 
 .btn::before {
@@ -78,7 +78,7 @@
 }
 
 @media (max-width: 800px) {
-  .introducao{
+  .introducao {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 40px;
@@ -100,7 +100,7 @@
 }
 
 @media (max-width: 600px) {
-  .introducao{
+  .introducao {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 20px;

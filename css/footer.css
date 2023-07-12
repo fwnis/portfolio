@@ -14,7 +14,7 @@
 .footer-texto {
   font-size: 1.5rem;
   line-height: 1.33;
-  color: #CFCFCF;
+  color: #cfcfcf;
 }
 
 .footer-contato li {
@@ -27,12 +27,28 @@
 
 .footer-contato li a {
   color: #fff;
+  position: relative;
+}
+
+.footer-contato li a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0px;
+  background: #fff;
+  margin-top: 8px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.footer-contato li a:hover::after {
+  width: 100%;
 }
 
 .footer-copy {
   grid-column: 1 / -1;
   font-size: 1rem;
-  color: #8F8F8F;
+  color: #8f8f8f;
 }
 
 @media (max-width: 800px) {
